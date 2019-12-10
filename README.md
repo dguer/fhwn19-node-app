@@ -11,6 +11,11 @@ az aks create --resource-group fhwn19-node-app --name fhwn19-node-app --node-cou
 - Create new pipeline
 -> select Deploy to Azure Kubernetes Service
 
+    - Creates a Docker registry service connection
+    - Creates an environment and a Kubernetes resource within the environment.
+    - Generates an azure-pipelines.yml 
+    - Generates Kubernetes manifest files (deployment.yml, service.yml)
+
 -Show external IP
 -> View Environments
     -> click to deployed app
